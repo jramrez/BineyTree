@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class BineyTree {
+public class BineyTree { //reused the linked list made from scratch
     private String name; 
     private BineyTree right;
     private BineyTree left;

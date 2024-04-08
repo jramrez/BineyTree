@@ -12,6 +12,7 @@ class Main {
       famTree.getLeft().setLeft(new BineyTree("Jim", famTree.getLeft()));
       famTree.getLeft().setRight(new BineyTree("Jill", famTree.getLeft()));
       famTree.getRight().setLeft(new BineyTree("Jake", famTree.getRight()));
+      famTree.getRight().getLeft().setLeft(new BineyTree("Jade", famTree.getRight().getLeft()));
       famTree.readTreebyLevel();
     }
 }

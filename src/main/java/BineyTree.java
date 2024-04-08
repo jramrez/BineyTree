@@ -47,9 +47,9 @@ public class BineyTree { //reused the linked list made from scratch
     public void readTreebyLevel() {
       LinkedList<BineyTree> q = new LinkedList<BineyTree>(); //majorly assisted by https://www.geeksforgeeks.org/level-order-tree-traversal/
       q.add(this); //adds the node it was called from to the queue
-      while (q.isEmpty() == false) {
+      while (!q.isEmpty()) {
         BineyTree temp = q.remove();
-        System.out.print(temp.getName() + " ");
+        System.out.print(temp.getName() + " "); //added to a temp variable then name is printed
         if (temp.getLeft() != null) { //If there is a left child, it is added to the queue
           q.add(temp.getLeft());
         }

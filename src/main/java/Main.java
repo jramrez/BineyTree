@@ -56,5 +56,6 @@ class Main {
         }
       }
       famTree.readTreebyLevel();
+      scan.close();
     }
 }
